@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CGPA</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">MyCGPA</h1>
+    </header>
+    <main>
+        <div class="left"></div>
+        <div class="main">
+            <div class="cont">
+                <div class ='intro'>
+                    <h1 class="conttitle">
+                        Welcome to MyCGPA
+                    </h1>
+                    <p class="conttext">
+                        Where you can calculate your CGPA and keep track of your courses and grades from each 
+                        semester and year.On top of that you can caculate and see your semester GPA aswell.
+        
+                    </p>
+                </div>
+                <div>
+                    <button class="add-field">Add Field</button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="right"></div>
+    </main>
+
+    <dialog class="addfield">
+        <form method="dialog">
+            <label for="fname">Field Name</label>
+            <input type="text" name="fname" class="fname">
+            <label for="year">Year</label>
+            <input type="number" name="year" class="year">
+            <label for="sem">Semester</label>
+            <input type="number" name="sem" class="sem">
+            <button type="button" class="create-field">Create Field</button>
+        </form>
+    </dialog>
+
+    <dialog class="addcourse">
+        <form method="dialog">
+            <label for="coursename">Course Name</label>
+            <input type="text" name="coursename" class="coursename">
+            <label for="credit">Credit Hours</label>
+            <input type="number" name="credit" class="credit">
+            <label for="grade">Grade</label>
+            <input type="text" name="grade" class="grade">
+            <button type="button" class="create-course">Add Course</button>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+</html>
